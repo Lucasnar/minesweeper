@@ -65,7 +65,6 @@ class Minesweeper
   private
 
   def generate_board
-    #puts @width.to_s + " x " + @height.to_s + " board"
     @board = Array.new(@width) { Array.new(@height) {Cell.new} }
     place_mines
   end
