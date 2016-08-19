@@ -126,7 +126,7 @@ describe Minesweeper do
 
   describe ".still_playing?" do
     context "given a board with no mines" do
-      it "should end the game in one movement due to the expansion" do
+      it "should end the game in one movement (due to the expansion)" do
         game = Minesweeper.new(5, 5, 0)
         game.play(0, 0)
         expect(game.still_playing?).to be false
